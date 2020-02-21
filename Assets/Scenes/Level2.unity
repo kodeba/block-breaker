@@ -691,6 +691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 4122369243330764161, guid: 37b813ed550e74608a2006e24e0b2557,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4122369243330764172, guid: 37b813ed550e74608a2006e24e0b2557,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -748,9 +753,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
         type: 3}
+      propertyPath: ballSounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
+        type: 3}
       propertyPath: paddle
       value: 
       objectReference: {fileID: 1756185309}
+    - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
+        type: 3}
+      propertyPath: ballSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d692da25c394b44c59592923fd58cb52, type: 3}
+    - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
+        type: 3}
+      propertyPath: ballSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c876b2a4250e45f8921fe6f7f63e618, type: 3}
+    - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
+        type: 3}
+      propertyPath: ballSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 04b8ec0cc5f3d4605abf0f9a2346798e, type: 3}
+    - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
+        type: 3}
+      propertyPath: ballSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f3a4b3b46da14fb9aa9f47b0d05d750, type: 3}
+    - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
+        type: 3}
+      propertyPath: ballSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bd964bc8813f4d46bf4ed2c530cb690, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b813ed550e74608a2006e24e0b2557, type: 3}
 --- !u!1 &1378472350 stripped

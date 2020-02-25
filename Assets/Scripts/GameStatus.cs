@@ -18,6 +18,20 @@ public class GameStatus : MonoBehaviour
     [SerializeField]
     Text scoreText;
 
+    private void Awake()
+    {
+        int numberOfThing = FindObjectsOfType<GameStatus>().Length;
+        if(numberOfThing > 1)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
     private void Start()
     {
         UpdateScore();

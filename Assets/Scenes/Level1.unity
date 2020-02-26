@@ -711,6 +711,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2122436602}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &706670298 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 909822629025561996, guid: 9e5136869d8254021824ee210d7eb23b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4570529783555110647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1076041079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5413134443564532522, guid: 9e5136869d8254021824ee210d7eb23b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4570529783555110647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1076041080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076041079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acfdec55378fe41f1a011d30a4508cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSpeed: 1
+  currentScore: 0
+  point: 10
+  scoreText: {fileID: 706670298}
 --- !u!1 &1117831739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1550,7 +1584,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSession
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5413134443564532523, guid: 9e5136869d8254021824ee210d7eb23b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9e5136869d8254021824ee210d7eb23b, type: 3}
 --- !u!1001 &5997370157998662398
 PrefabInstance:
@@ -1632,21 +1667,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Block
-      objectReference: {fileID: 0}
-    - target: {fileID: 6104089126942814678, guid: 0db8922a3457947349e8f3fa682a980c,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6104089126942814678, guid: 0db8922a3457947349e8f3fa682a980c,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6104089126942814678, guid: 0db8922a3457947349e8f3fa682a980c,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.5115199
       objectReference: {fileID: 0}
     - target: {fileID: 6104089126942814679, guid: 0db8922a3457947349e8f3fa682a980c,
         type: 3}

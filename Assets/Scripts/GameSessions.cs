@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameStatus : MonoBehaviour
+public class GameSessions : MonoBehaviour
 {
     [Range(0.1f,10f)]
     [SerializeField]
@@ -20,7 +20,7 @@ public class GameStatus : MonoBehaviour
 
     private void Awake()
     {
-        int numberOfThing = FindObjectsOfType<GameStatus>().Length;
+        int numberOfThing = FindObjectsOfType<GameSessions>().Length;
         if(numberOfThing > 1)
         {
             DestroySelf();

@@ -23,8 +23,7 @@ public class GameStatus : MonoBehaviour
         int numberOfThing = FindObjectsOfType<GameStatus>().Length;
         if(numberOfThing > 1)
         {
-            gameObject.SetActive(false);
-            Destroy(gameObject);
+            DestroySelf();
         }
         else
         {
@@ -52,6 +51,12 @@ public class GameStatus : MonoBehaviour
     private void UpdateScore()
     {
         scoreText.text = currentScore.ToString();
+    }
+
+    public void DestroySelf()
+    {
+        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
 }

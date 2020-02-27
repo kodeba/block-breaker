@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    [SerializeField]
-    AudioClip breakSound;
+    [SerializeField] AudioClip breakSound;
+    [SerializeField] GameObject blockSparklesVFX;
+    [SerializeField] int maxHits = 2;
 
-    [SerializeField]
-    GameObject blockSparklesVFX;
+    private int timeHits = 0;
 
     Level level;
-
     GameSessions gameSession;
 
     private void Start()
@@ -26,7 +25,11 @@ public class Block : MonoBehaviour
     {
         if(IsBreakable())
         {
-            DestroyBlock();
+            timeHits++;
+            if(timeHits >= maxHits)
+            {
+                DestroyBlock();
+            }
         }
     }
 
@@ -55,7 +58,7 @@ public class Block : MonoBehaviour
 
     private bool IsBreakable()
     {
-        return gameObject.tag == "Breakable";
+        return tag == "Breakable";
     }
 
 }

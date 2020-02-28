@@ -916,6 +916,7 @@ MonoBehaviour:
   currentScore: 0
   point: 10
   scoreText: {fileID: 706670298}
+  isAutoEnable: 1
 --- !u!1 &1117831739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,7 +1914,12 @@ PrefabInstance:
     - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
         type: 3}
       propertyPath: randomFactory
-      value: 5
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4122369243330764174, guid: 37b813ed550e74608a2006e24e0b2557,
+        type: 3}
+      propertyPath: yPush
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b813ed550e74608a2006e24e0b2557, type: 3}

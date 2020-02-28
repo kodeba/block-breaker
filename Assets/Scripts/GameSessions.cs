@@ -5,18 +5,11 @@ using UnityEngine.UI;
 
 public class GameSessions : MonoBehaviour
 {
-    [Range(0.1f,10f)]
-    [SerializeField]
-    float gameSpeed = 1f;
-
-    [SerializeField]
-    int currentScore = 0;
-
-    [SerializeField]
-    int point = 10;
-
-    [SerializeField]
-    Text scoreText;
+    [Range(0.1f,10f)] [SerializeField] float gameSpeed = 1f;
+    [SerializeField] int currentScore = 0;
+    [SerializeField] int point = 10;
+    [SerializeField] Text scoreText;
+    [SerializeField] bool isAutoEnable = false;
 
     private void Awake()
     {
@@ -57,6 +50,11 @@ public class GameSessions : MonoBehaviour
     {
         gameObject.SetActive(false);
         Destroy(gameObject);
+    }
+
+    public bool IsAutoEnable()
+    {
+        return isAutoEnable;
     }
 
 }

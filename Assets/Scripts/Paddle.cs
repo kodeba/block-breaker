@@ -21,10 +21,23 @@ public class Paddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float posX = Input.mousePosition.x / Screen.width * screenWidthInUnits;
+        float posX = GetPosX();
         posX = Mathf.Clamp(posX, minX, maxX);
         float posY = transform.position.y;
         Vector2 pos = new Vector2(posX, posY);
         transform.position = pos;
     }
+
+    private float GetPosX()
+    {
+        if (FindObjectOfType<GameSessions>().IsAutoEnable())
+        {
+            return FindObjectOfType<Ball>().transform.position.x;
+        }
+        else
+        {
+            return Input.mousePosition.x / Screen.width * screenWidthInUnits;
+        }
+    }
+
 }
